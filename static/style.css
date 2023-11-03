@@ -1,0 +1,129 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(220,220,220);
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* Create an outline and format each section on my webpage (job list, highlighted job, add a job) */
+.box {
+  margin: auto;
+  border: 2px solid black;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+/* Job list section */
+h2#job_list {
+  color:blueviolet;
+  text-decoration: underline;
+}
+
+ol {
+  padding: 0;
+}
+
+ol li{
+  margin: auto;
+  list-style: none;
+  font-weight: bold;
+  color: black;
+  border: 2px solid black;
+  padding: 2px;
+  margin-bottom: 5px;
+  background-color: #D9B4FB;
+  width: 50%;
+}
+
+ol li:hover {
+  color: white;
+  scale: 1.05;
+  cursor: pointer;
+  background-color: blueviolet;
+}
+
+
+button#updateListButton {
+  color: black;
+  background-color: blueviolet;
+  font-weight: bold;
+}
+
+button#updateListButton:hover {
+  color: white;
+  scale: 1.2;
+  cursor: pointer;
+}
+
+/* Highlighted job section */
+h3#highlighted_job {
+  text-decoration: underline;
+  color: #3951AA;
+}
+
+button#deleteJobButton {
+  color: black;
+  background-color: red;
+  font-weight: bold;
+}
+
+button#deleteJobButton:hover {
+  color: white;
+  scale: 1.2;
+  cursor: pointer;
+}
+
+/* Add job section */
+h3#add_job {
+  text-decoration: underline;
+  color: green;
+}
+
+button#addJobButton {
+  color: black;
+  background-color: green;
+  font-weight: bold;
+}
+
+button#addJobButton:hover {
+  color: white;
+  scale: 1.2;
+  cursor: pointer;
+}
+
+select#priorityOptions {
+  width: 50%;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+/* To ensure you cannot select the "Please Select" option in option sections*/
+option#selectOne {
+  display: none;
+}
+
+/* Generic formatting of all input HTML tags to align webpage correctly */
+input {
+  width: 50%;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+

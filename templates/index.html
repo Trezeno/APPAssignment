@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>APP Assignment</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+  
+<body>
+  <h1>MY TO DO LIST</h1>
+
+  <div class="box">
+    <h2 id="job_list">Current Job List</h3>
+    <label for="filterOptions">Sort By: </label>
+    <select for="filterOptions" id="filterOptions">
+      <option id="selectOne" value="selectOne">Please Select</option>
+      <option id="filterNumber" value="filterNumber">Job List Number</option>
+      <option id="filterDate" value="filterDate">Due Date</option>
+      <option id="filterPriority" value="filterPriority">Priority</option>
+    </select>
+    <ol id="jobList">
+    </ol>
+    <button id="updateListButton">Update</button>
+  </div>
+
+  <div class="box">
+    <h3 id="highlighted_job">Highlighted Job:</h3>
+    <label for="jobId">Job Number:</label>
+    <input type="test" id="jobIdShow" disabled>
+    <label for="jobName">Job Name:</label>
+    <input type="text" id="jobNameShow" disabled>
+    <label for="jobDate">Job Date:</label>
+    <input type="text" id="jobDateShow" disabled>
+    <label for="jobPriority">Job Priority:</label>
+    <input type="text" id="jobPriorityShow" disabled><br>
+    <button id="deleteJobButton">Delete Highlighted Job</button>
+  </div>
+
+  <div class="box">
+    <h3 id="add_job">Add a Job:</h3>
+    <label for="jobName">Job Name:</label>
+    <input type="text" id="jobNameAdd" required>
+    <label for="jobDate">Job Date:</label>
+    <input type="date" id="jobDateAdd" required>
+    <label for="jobPriority">Job Priority:</label>
+    <select for="priorityOptions" id="priorityOptions">
+      <option id="selectOne" value="selectOne">Please Select</option>
+      <option id="high" value="high">HIGH</option>
+      <option id="medium" value="medium">MEDIUM</option>
+      <option id="low" value="low">LOW</option>
+    </select><br>
+    <button id="addJobButton">Add Job</button>
+  </div>
+
+  <script src="static/scripts/script.js"></script>
+</body>
+  
+</html>
